@@ -19,7 +19,7 @@ BST<std::string> makeTree(const char* filename) {
     char chars = file.get();
     if ((chars >= 'a' && chars <= 'z') || (chars >= 'A' && chars <= 'Z')) {
       if (chars >= 'A' && chars <= 'Z')
-        chars += lowercase;
+        chars += lowcase;
       words += chars;
     } else if (words != "") {
       tree.add(words);
