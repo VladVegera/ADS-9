@@ -48,8 +48,8 @@ class BST {
       return searchValue(root->rig, v);
     }
   }
-  
-  public:
+
+ public:
     BST() :root(nullptr) {}
     void add(T v) {
       root = addNode(root, v);
