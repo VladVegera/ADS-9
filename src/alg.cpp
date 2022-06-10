@@ -16,11 +16,11 @@ BST<std::string> makeTree(const char* filename) {
     return tree;
   }
   while (!file.eof()) {
-    char char = file.get();
-    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
-      if (char >= 'A' && char <= 'Z')
-        char += lowercase;
-      words += char;
+    char chars = file.get();
+    if ((chars >= 'a' && chars <= 'z') || (chars >= 'A' && chars <= 'Z')) {
+      if (chars >= 'A' && chars <= 'Z')
+        chars += lowercase;
+      words += chars;
     } else if (words != "") {
       tree.add(words);
       words = "";
