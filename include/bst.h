@@ -46,7 +46,7 @@ class BST {
     } else if (root->value > v) {
       return searchValue(root->left, v);
     } else {
-      return searchValue(root->rig, v);
+      return searchValue(root->right, v);
     }
   }
 
