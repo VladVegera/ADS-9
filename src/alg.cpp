@@ -10,7 +10,7 @@ BST<std::string> makeTree(const char* filename) {
   std::string words = "";
   char lowcase = 'a' - 'A';
   std::ifstream file(filename);
-  
+
   if (!file) {
     std::cout << "Error!" << std::endl;
     return tree;
